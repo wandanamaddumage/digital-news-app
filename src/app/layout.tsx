@@ -9,6 +9,8 @@ import "aos/dist/aos.css";
 
 import type { Metadata } from "next";
 import { EB_Garamond } from "next/font/google";
+import Header from "@/components/header/header";
+
 import "./variables.css";
 import "./globals.css";
 
@@ -26,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ebGaramond.className}>{children}</body>
+      <body className={ebGaramond.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
