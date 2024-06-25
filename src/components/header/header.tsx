@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import Nav from "../navigation/nav";
+import Sci from "../sci/sci";
 
 export default function Header() {
   return (
@@ -15,6 +16,9 @@ export default function Header() {
           <h1>DigitalNews</h1>
         </a>
         <Nav />
+        <div className="position-relative">
+          <Sci />
+        </div>
       </div>
     </header>
   );
